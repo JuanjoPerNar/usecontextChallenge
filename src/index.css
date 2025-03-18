@@ -24,20 +24,47 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
+h1 {display: flex;
+  justify-content: center;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
 }
 
 button {
@@ -74,10 +101,9 @@ button:focus-visible {
 }
 .App {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
 }
 .light {
   background-color: white;
@@ -87,9 +113,5 @@ button:focus-visible {
 .dark {
   background-color: #242424;
   color: #ccc;
-}
-
-.content {
-  width: 300px;
 }
 
